@@ -1,4 +1,4 @@
-import "dart:html"
+import 'dart:html';
 
 main() async {
   var countdown = querySelector("#countdown");
