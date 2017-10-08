@@ -5567,6 +5567,16 @@
       $isInterceptor: 1,
       "%": "HTMLBodyElement"
     },
+    CharacterData: {
+      "^": "Node;length=",
+      $isInterceptor: 1,
+      "%": "CDATASection|CharacterData|Comment|ProcessingInstruction|Text"
+    },
+    DocumentFragment: {
+      "^": "Node;",
+      $isInterceptor: 1,
+      "%": "DocumentFragment|ShadowRoot"
+    },
     DomException: {
       "^": "Interceptor;",
       toString$0: function(receiver) {
@@ -5625,7 +5635,7 @@
         var value = receiver.nodeValue;
         return value == null ? this.super$Interceptor$toString(receiver) : value;
       },
-      "%": "Document|HTMLDocument;Node"
+      "%": "Attr|Document|HTMLDocument|XMLDocument;Node"
     },
     SelectElement: {
       "^": "HtmlElement;length=",
@@ -5677,6 +5687,11 @@
       call$1: function(time) {
         this.completer.complete$1(0, time);
       }
+    },
+    _DocumentType: {
+      "^": "Node;",
+      $isInterceptor: 1,
+      "%": "DocumentType"
     },
     _HTMLFrameSetElement: {
       "^": "HtmlElement;",
@@ -5893,7 +5908,8 @@
                 $async$goto = 4;
                 break;
               }
-              countdown.textContent = "Time: " + i;
+              countdown.toString;
+              countdown.appendChild(t1.createTextNode("</3 \n"));
               $async$goto = 5;
               return P._asyncAwait(C.Window_methods.get$animationFrame(window), $async$main);
             case 5:
