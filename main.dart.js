@@ -7,6 +7,6 @@ main() async {
     await window.animationFrame;
   }
 
-  var pubBox = querySelector("#puns");
-  pubBox.text = "You broke my dart </3"
+  var punBox = querySelector("#puns");
+  punBox.text = "You broke my dart </3";
 }
